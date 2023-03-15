@@ -15,7 +15,9 @@ const Header = () => {
 	return (
 		<Navbar className="bg-white" light sticky="top" expand="md">
 			<NavbarBrand href="/">
-				<h1 className="mt-1 text-[#fb5a6e] font-thin">DAO</h1>
+				<h1 className="mt-1" style={{ color: '#126aff' }}>
+					Real Estate Analytics
+				</h1>
 			</NavbarBrand>
 
 			<NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />

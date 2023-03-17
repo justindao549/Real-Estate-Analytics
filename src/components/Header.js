@@ -15,8 +15,8 @@ const Header = () => {
 	return (
 		<Navbar className="bg-white" light sticky="top" expand="md">
 			<NavbarBrand href="/">
-				<h1 className="mt-1" style={{ color: '#126aff' }}>
-					Real Estate Analytics
+				<h1 className="mt-1 Logo" style={{ color: '#343434' }}>
+					REA
 				</h1>
 			</NavbarBrand>
 
@@ -24,19 +24,19 @@ const Header = () => {
 			<Collapse isOpen={menuOpen} navbar>
 				<Nav className="ms-auto navbar">
 					<NavItem>
+						<NavLink className="nav-link" to="/map">
+							Map
+						</NavLink>
+					</NavItem>
+					<NavItem>
 						<NavLink className="nav-link" to="/">
-							<i className="fa fa-file" /> Resume
+							Saved
 						</NavLink>
 					</NavItem>
 
 					<NavItem>
 						<NavLink className="nav-link" to="/directory">
-							<i className="fa fa-linkedin" /> Linked
-						</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink className="nav-link" to="/contact">
-							<i className="fa fa-address-card fa-lg" /> Contact
+							Top Picks
 						</NavLink>
 					</NavItem>
 				</Nav>

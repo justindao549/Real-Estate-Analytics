@@ -11,7 +11,7 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
-				<Route path="map" element={<MapPage />} />
+				<Route path="/map" element={<MapPage />} />
 			</Routes>
 			{/* <Footer /> */}
 		</div>
@@ -20,7 +20,6 @@ function App() {
 
 export default App;
 
-
 //Micro Filters:
 //For Sale, For Rent, Sold
 //Price Range
@@ -28,4 +27,8 @@ export default App;
 //
 
 //Macro Filters:
-//
+//Business revenue Heatmap
+//Population Growth Heatmap [at least 10k residents & 15 yrs of past growth rates]
+/////// increased job opps->better pay, higher individual wealth->real estate increase
+/////// conversely, economic decline, de-industrialization. depopulation, overpopulation
+//Criminal Heatmap

@@ -1,12 +1,25 @@
 import React from 'react';
-import { useLoadScript } from '@react-google-maps/api';
+import { Container, Row, Col } from 'reactstrap';
+import Map from '../components/Map';
 
 const MapPage = () => {
-	const { isLoaded } = useLoadScript({
-		googleMapsApiKey: process.env.googleMapsApiKey,
-	});
+	return (
+		<Container style={styles.Container}>
+			<Row>
+				<Col md={2}>List</Col>
+				<Col md={4}>
+					<Map />
+				</Col>
+			</Row>
+		</Container>
+	);
+};
 
-	return <div>f;alskdjf;alksjdf;alskjdf;laskdjf</div>;
+const styles = {
+	Container: {
+		padding: '0px',
+		margin: '0px',
+	},
 };
 
 export default MapPage;
